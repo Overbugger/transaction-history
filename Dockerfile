@@ -1,7 +1,7 @@
 # === Build Stage ===
 FROM maven:3.9.5-eclipse-temurin-17-alpine AS builder
 WORKDIR /app
-COPY k8s .
+COPY . .
 RUN mvn clean package -DskipTests
 
 # === Runtime Stage ===
