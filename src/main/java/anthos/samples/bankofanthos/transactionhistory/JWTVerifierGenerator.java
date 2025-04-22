@@ -64,7 +64,7 @@ public class JWTVerifierGenerator {
                 | InvalidKeySpecException e) {
             LOGGER.error(String.format("Failed initializing JWT verifier: %s",
                 e.toString()));
-            throw new GenerateKeyException("Cannot generate key: ", e);
+            throw new GenerateKeyException("Cannot generate key now: ", e);
         }
     }
 
